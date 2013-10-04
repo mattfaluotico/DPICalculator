@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Device.h"
 
-@interface DPICViewController : UIViewController
+@interface DPICViewController : UIViewController <UIAlertViewDelegate> {
+    
+};
+
+@property (strong, nonatomic) IBOutlet UIButton *devices;
+@property (strong, nonatomic) IBOutlet UITextField *resVertical;
+@property (strong, nonatomic) IBOutlet UITextField *resHorizontal;
+@property (strong, nonatomic) IBOutlet UITextField *screenSize;
+@property (strong, nonatomic) IBOutlet UILabel *resultsDPI;
+@property (strong, nonatomic) IBOutlet UILabel *resultsScreen;
+
+-(void) updateResults;
+
+- (IBAction)addDevice:(UIButton *)sender;
+
 
 @end

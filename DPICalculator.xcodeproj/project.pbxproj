@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1C4A4C17FA60AF006CC24C /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1C4A4B17FA60AF006CC24C /* Device.m */; };
+		FBDD2DB717B9D52100A7C53C /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDD2DB617B9D52100A7C53C /* DevicesViewController.m */; };
 		FBF5ECFD17B85D2200282F9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFC17B85D2200282F9D /* UIKit.framework */; };
 		FBF5ECFF17B85D2200282F9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFE17B85D2200282F9D /* Foundation.framework */; };
 		FBF5ED0117B85D2200282F9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ED0017B85D2200282F9D /* CoreGraphics.framework */; };
@@ -18,9 +20,16 @@
 		FBF5ED1317B85D2200282F9D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED1217B85D2200282F9D /* Default-568h@2x.png */; };
 		FBF5ED1617B85D2200282F9D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED1417B85D2200282F9D /* MainStoryboard.storyboard */; };
 		FBF5ED1917B85D2200282F9D /* DPICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5ED1817B85D2200282F9D /* DPICViewController.m */; };
+		FBF8D90D17BC042300BBE7DF /* Devices.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF8D90C17BC042300BBE7DF /* Devices.plist */; };
+		FBF8D90F17BC06C900BBE7DF /* Common.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF8D90E17BC06C900BBE7DF /* Common.plist */; };
+		FBF8D91117BC06DB00BBE7DF /* MyDevices.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF8D91017BC06DB00BBE7DF /* MyDevices.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1C4A4A17FA60AF006CC24C /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		FB1C4A4B17FA60AF006CC24C /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		FBDD2DB517B9D52100A7C53C /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
+		FBDD2DB617B9D52100A7C53C /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
 		FBF5ECF917B85D2200282F9D /* DPICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF5ECFC17B85D2200282F9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBF5ECFE17B85D2200282F9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +46,9 @@
 		FBF5ED1517B85D2200282F9D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		FBF5ED1717B85D2200282F9D /* DPICViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPICViewController.h; sourceTree = "<group>"; };
 		FBF5ED1817B85D2200282F9D /* DPICViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPICViewController.m; sourceTree = "<group>"; };
+		FBF8D90C17BC042300BBE7DF /* Devices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Devices.plist; path = DPICalculator/Devices.plist; sourceTree = "<group>"; };
+		FBF8D90E17BC06C900BBE7DF /* Common.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Common.plist; path = DPICalculator/Common.plist; sourceTree = "<group>"; };
+		FBF8D91017BC06DB00BBE7DF /* MyDevices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MyDevices.plist; path = DPICalculator/MyDevices.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1C4A4D17FA60BA006CC24C /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				FB1C4A4A17FA60AF006CC24C /* Device.h */,
+				FB1C4A4B17FA60AF006CC24C /* Device.m */,
+			);
+			name = Device;
+			sourceTree = "<group>";
+		};
+		FB1C4A4E17FA60C5006CC24C /* Devices View and Table */ = {
+			isa = PBXGroup;
+			children = (
+				FBDD2DB517B9D52100A7C53C /* DevicesViewController.h */,
+				FBDD2DB617B9D52100A7C53C /* DevicesViewController.m */,
+			);
+			name = "Devices View and Table";
+			sourceTree = "<group>";
+		};
+		FB1C4A4F17FA610F006CC24C /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				FBF5ED1717B85D2200282F9D /* DPICViewController.h */,
+				FBF5ED1817B85D2200282F9D /* DPICViewController.m */,
+			);
+			name = "Home View";
+			sourceTree = "<group>";
+		};
 		FBF5ECF017B85D2200282F9D = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +122,13 @@
 		FBF5ED0217B85D2200282F9D /* DPICalculator */ = {
 			isa = PBXGroup;
 			children = (
+				FB1C4A4F17FA610F006CC24C /* Home View */,
+				FB1C4A4E17FA60C5006CC24C /* Devices View and Table */,
+				FB1C4A4D17FA60BA006CC24C /* Device */,
 				FBF5ED0B17B85D2200282F9D /* DPICAppDelegate.h */,
 				FBF5ED0C17B85D2200282F9D /* DPICAppDelegate.m */,
 				FBF5ED1417B85D2200282F9D /* MainStoryboard.storyboard */,
-				FBF5ED1717B85D2200282F9D /* DPICViewController.h */,
-				FBF5ED1817B85D2200282F9D /* DPICViewController.m */,
+				FBF8D91217BC07FC00BBE7DF /* DataLists */,
 				FBF5ED0317B85D2200282F9D /* Supporting Files */,
 			);
 			path = DPICalculator;
@@ -105,6 +146,17 @@
 				FBF5ED1217B85D2200282F9D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBF8D91217BC07FC00BBE7DF /* DataLists */ = {
+			isa = PBXGroup;
+			children = (
+				FBF8D90C17BC042300BBE7DF /* Devices.plist */,
+				FBF8D90E17BC06C900BBE7DF /* Common.plist */,
+				FBF8D91017BC06DB00BBE7DF /* MyDevices.plist */,
+			);
+			name = DataLists;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +216,9 @@
 				FBF5ED1117B85D2200282F9D /* Default@2x.png in Resources */,
 				FBF5ED1317B85D2200282F9D /* Default-568h@2x.png in Resources */,
 				FBF5ED1617B85D2200282F9D /* MainStoryboard.storyboard in Resources */,
+				FBF8D90D17BC042300BBE7DF /* Devices.plist in Resources */,
+				FBF8D90F17BC06C900BBE7DF /* Common.plist in Resources */,
+				FBF8D91117BC06DB00BBE7DF /* MyDevices.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +232,8 @@
 				FBF5ED0917B85D2200282F9D /* main.m in Sources */,
 				FBF5ED0D17B85D2200282F9D /* DPICAppDelegate.m in Sources */,
 				FBF5ED1917B85D2200282F9D /* DPICViewController.m in Sources */,
+				FB1C4A4C17FA60AF006CC24C /* Device.m in Sources */,
+				FBDD2DB717B9D52100A7C53C /* DevicesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +356,7 @@
 				FBF5ED1E17B85D2200282F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

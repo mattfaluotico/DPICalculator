@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>resH</key>
+		<integer>1200</integer>
+		<key>resV</key>
+		<integer>1200</integer>
+		<key>device</key>
+		<string>Nexus 7</string>
+		<key>screen</key>
+		<integer>7</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1600</integer>
+		<key>resV</key>
+		<integer>2560</integer>
+		<key>device</key>
+		<string>Nexus 10</string>
+		<key>screen</key>
+		<real>10.1</real>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>2048</integer>
+		<key>resV</key>
+		<integer>1536</integer>
+		<key>device</key>
+		<string>iPad with Retina Display</string>
+		<key>screen</key>
+		<real>9.800000000000001</real>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1024</integer>
+		<key>resV</key>
+		<integer>768</integer>
+		<key>device</key>
+		<string>iPad Mini</string>
+		<key>screen</key>
+		<real>7.9</real>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<real>1280</real>
+		<key>resV</key>
+		<integer>800</integer>
+		<key>device</key>
+		<string>MacBook Pro 13&quot;</string>
+		<key>screen</key>
+		<integer>13</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>2880</integer>
+		<key>resV</key>
+		<integer>1800</integer>
+		<key>device</key>
+		<string>MacBook Pro Retina Display 15&quot;</string>
+		<key>screen</key>
+		<integer>15</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>2560</integer>
+		<key>resV</key>
+		<integer>1600</integer>
+		<key>device</key>
+		<string>MacBook Pro Retina Display 13&quot;</string>
+		<key>screen</key>
+		<real>13.3</real>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>720</integer>
+		<key>resV</key>
+		<integer>1280</integer>
+		<key>device</key>
+		<string>Samsung Galaxy S3</string>
+		<key>screen</key>
+		<real>4.7</real>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1080</integer>
+		<key>resV</key>
+		<integer>1920</integer>
+		<key>device</key>
+		<string>Samsung Galaxy S4</string>
+		<key>screen</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>640</integer>
+		<key>resV</key>
+		<integer>960</integer>
+		<key>device</key>
+		<string>iPhone 4/4S</string>
+		<key>screen</key>
+		<real>3.5</real>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>640</integer>
+		<key>resV</key>
+		<integer>1136</integer>
+		<key>device</key>
+		<string>iPhone 5/s/c</string>
+		<key>screen</key>
+		<integer>4</integer>
+	</dict>
+</array>
+</plist>
