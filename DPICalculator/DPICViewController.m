@@ -88,8 +88,8 @@
 
     // because the cancel button is index 0
     if (buttonIndex != 0) {
-        NSInteger hr = [[[self resHorizontal] text] integerValue];
-        NSInteger vr = [[[self resVertical] text] integerValue];
+        NSInteger *hr = (NSInteger *)[[[self resHorizontal] text] integerValue];
+        NSInteger *vr = (NSInteger *)[[[self resVertical] text] integerValue];
         
         NSString *name = [alertView textFieldAtIndex:0].text;
         

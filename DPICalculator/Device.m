@@ -10,7 +10,7 @@
 
 @implementation Device
 
-- (id)initWithName:(NSString *)n horizontalResolution:(NSInteger *)hr verticalResolution:(NSInteger *)vr  {
+- (id)initWithName:(NSString *)n horizontalResolution:(NSInteger *) hr verticalResolution:(NSInteger * ) vr  {
  
     self.deviceName = n;
     self.horizontalResolution = hr;

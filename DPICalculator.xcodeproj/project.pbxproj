@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB1C4A4C17FA60AF006CC24C /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1C4A4B17FA60AF006CC24C /* Device.m */; };
 		FBDD2DB717B9D52100A7C53C /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDD2DB617B9D52100A7C53C /* DevicesViewController.m */; };
+		FBDF8773180852930017CC4D /* Common.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBDF8772180852930017CC4D /* Common.plist */; };
 		FBF5ECFD17B85D2200282F9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFC17B85D2200282F9D /* UIKit.framework */; };
 		FBF5ECFF17B85D2200282F9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFE17B85D2200282F9D /* Foundation.framework */; };
 		FBF5ED0117B85D2200282F9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ED0017B85D2200282F9D /* CoreGraphics.framework */; };
@@ -21,7 +22,6 @@
 		FBF5ED1617B85D2200282F9D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED1417B85D2200282F9D /* MainStoryboard.storyboard */; };
 		FBF5ED1917B85D2200282F9D /* DPICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5ED1817B85D2200282F9D /* DPICViewController.m */; };
 		FBF8D90D17BC042300BBE7DF /* Devices.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF8D90C17BC042300BBE7DF /* Devices.plist */; };
-		FBF8D90F17BC06C900BBE7DF /* Common.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF8D90E17BC06C900BBE7DF /* Common.plist */; };
 		FBF8D91117BC06DB00BBE7DF /* MyDevices.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF8D91017BC06DB00BBE7DF /* MyDevices.plist */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,7 @@
 		FB1C4A4B17FA60AF006CC24C /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 		FBDD2DB517B9D52100A7C53C /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
 		FBDD2DB617B9D52100A7C53C /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
+		FBDF8772180852930017CC4D /* Common.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Common.plist; path = DPICalculator/Common.plist; sourceTree = "<group>"; };
 		FBF5ECF917B85D2200282F9D /* DPICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF5ECFC17B85D2200282F9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBF5ECFE17B85D2200282F9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,7 +48,6 @@
 		FBF5ED1717B85D2200282F9D /* DPICViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPICViewController.h; sourceTree = "<group>"; };
 		FBF5ED1817B85D2200282F9D /* DPICViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPICViewController.m; sourceTree = "<group>"; };
 		FBF8D90C17BC042300BBE7DF /* Devices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Devices.plist; path = DPICalculator/Devices.plist; sourceTree = "<group>"; };
-		FBF8D90E17BC06C900BBE7DF /* Common.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Common.plist; path = DPICalculator/Common.plist; sourceTree = "<group>"; };
 		FBF8D91017BC06DB00BBE7DF /* MyDevices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MyDevices.plist; path = DPICalculator/MyDevices.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,8 +151,8 @@
 		FBF8D91217BC07FC00BBE7DF /* DataLists */ = {
 			isa = PBXGroup;
 			children = (
+				FBDF8772180852930017CC4D /* Common.plist */,
 				FBF8D90C17BC042300BBE7DF /* Devices.plist */,
-				FBF8D90E17BC06C900BBE7DF /* Common.plist */,
 				FBF8D91017BC06DB00BBE7DF /* MyDevices.plist */,
 			);
 			name = DataLists;
@@ -217,8 +217,8 @@
 				FBF5ED1317B85D2200282F9D /* Default-568h@2x.png in Resources */,
 				FBF5ED1617B85D2200282F9D /* MainStoryboard.storyboard in Resources */,
 				FBF8D90D17BC042300BBE7DF /* Devices.plist in Resources */,
-				FBF8D90F17BC06C900BBE7DF /* Common.plist in Resources */,
 				FBF8D91117BC06DB00BBE7DF /* MyDevices.plist in Resources */,
+				FBDF8773180852930017CC4D /* Common.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

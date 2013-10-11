@@ -12,7 +12,7 @@
 
 @interface DevicesViewController ()
 
-+ (NSMutableArray *) initArray;
++ (NSMutableArray *) initArrayBySeg:(int)seg;
 
 @end
 
@@ -46,7 +46,7 @@ NSInteger myDevices = 2;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.devicesArray = [DevicesViewController initArray];
+    //self.devicesArray = [DevicesViewController initArray];
 
 }
 
@@ -81,8 +81,7 @@ NSInteger myDevices = 2;
     }
     
     // change array based on segment view...
-    
-    NSMutableArray *currentDevices = [self devicesArray];
+    NSMutableArray *currentDevices = [DevicesViewController initArrayBySeg:segmentDevices.selectedSegmentIndex];
     
     // change string values based on the input 
     NSString *textLabel = currentDevices[[indexPath row]][@"device"];
@@ -92,29 +91,20 @@ NSInteger myDevices = 2;
                          currentDevices[[indexPath row]][@"resV"]];
     
     // set as constant font
-    // cell.textLabel.font = [UIFont systemFontOfSize:11];
-    // cell.detailTextLabel.font = [UIFont systemFontOfSize:12];
+    cell.textLabel.font = [UIFont systemFontOfSize:11];
+    cell.detailTextLabel.font = [UIFont systemFontOfSize:12];
     
     // set font dynamically rather than a set font
-    cell.textLabel.adjustsFontSizeToFitWidth = YES;
-    cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
+    //cell.textLabel.adjustsFontSizeToFitWidth = YES;
+    //cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
     
-    
-    if (segmentDevices.selectedSegmentIndex == popular) {
+    if (textLabel != nil && details != nil) {
         cell.textLabel.text = textLabel;
         cell.detailTextLabel.text = details;
         
-    } else if (segmentDevices.selectedSegmentIndex == common) {
-        cell.textLabel.text = [NSString stringWithFormat: @"Common %d", [indexPath row]];
-        cell.detailTextLabel.text = @"1920x1080";
-        
-    } else if (segmentDevices.selectedSegmentIndex == myDevices) {
-        cell.textLabel.text = [NSString stringWithFormat: @"MyDevice %d", [indexPath row]];
-        cell.detailTextLabel.text = @"1920x1080";
-        
     } else {
-    cell.textLabel.text = [NSString stringWithFormat: @"Display %d", [indexPath row]];
-    cell.detailTextLabel.text = @"1920x1080";
+        cell.textLabel.text = [NSString stringWithFormat: @"Display %d", [indexPath row]];
+        cell.detailTextLabel.text = @"1920x1080";
     }
     
     return cell;
@@ -133,10 +123,19 @@ NSInteger myDevices = 2;
     [deviceTable reloadData];
 }
 
-+ (NSMutableArray * ) initArray {
++ (NSMutableArray * ) initArrayBySeg: (int) seg {
     
-    NSString *devicesPath = [[NSBundle mainBundle] pathForResource:@"Devices" ofType:@"plist"];
     
+    NSString *path;
+    if (seg == myDevices) {
+        path = @"My Devices";
+    } else if (seg == common) {
+        path = @"Common";
+    } else { // popular
+        path = @"Devices";
+    }
+    
+    NSString *devicesPath = [[NSBundle mainBundle] pathForResource:path ofType:@"plist"];
     NSMutableArray *devices = [NSMutableArray arrayWithContentsOfFile:devicesPath];
     
     return devices;

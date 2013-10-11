@@ -1,5 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>resH</key>
+		<integer>1920</integer>
+		<key>resV</key>
+		<integer>1080</integer>
+		<key>device</key>
+		<string>15&quot; Laptop</string>
+		<key>screen</key>
+		<integer>15</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<real>1600</real>
+		<key>resV</key>
+		<integer>900</integer>
+		<key>device</key>
+		<string>15&quot; Laptop</string>
+		<key>screen</key>
+		<integer>15</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1920</integer>
+		<key>resV</key>
+		<integer>1080</integer>
+		<key>device</key>
+		<string>55&quot; TV</string>
+		<key>screen</key>
+		<integer>55</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1920</integer>
+		<key>resV</key>
+		<integer>1080</integer>
+		<key>device</key>
+		<string>27&quot; TV</string>
+		<key>screen</key>
+		<integer>27</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1920</integer>
+		<key>resV</key>
+		<integer>1080</integer>
+		<key>device</key>
+		<string>32&quot; TV</string>
+		<key>screen</key>
+		<integer>32</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>2560</integer>
+		<key>resV</key>
+		<integer>1440</integer>
+		<key>device</key>
+		<string>27&quot; IPS Display</string>
+		<key>screen</key>
+		<integer>27</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1920</integer>
+		<key>resV</key>
+		<integer>1200</integer>
+		<key>device</key>
+		<string>24&quot; IPS Display</string>
+		<key>screen</key>
+		<integer>24</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1920</integer>
+		<key>resV</key>
+		<integer>1080</integer>
+		<key>device</key>
+		<string>23&quot; Monitor</string>
+		<key>screen</key>
+		<integer>23</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>3840</integer>
+		<key>resV</key>
+		<integer>2160</integer>
+		<key>device</key>
+		<string>60&quot; 4K TV</string>
+		<key>screen</key>
+		<integer>60</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1600</integer>
+		<key>resV</key>
+		<integer>900</integer>
+		<key>device</key>
+		<string>19&quot; Monitor</string>
+		<key>screen</key>
+		<integer>19</integer>
+	</dict>
+	<dict>
+		<key>resH</key>
+		<integer>1920</integer>
+		<key>resV</key>
+		<integer>1080</integer>
+		<key>device</key>
+		<string>70&quot; TV</string>
+		<key>screen</key>
+		<integer>70</integer>
+	</dict>
+</array>
 </plist>

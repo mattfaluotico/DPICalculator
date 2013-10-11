@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69DB57DB-C89D-4D8F-9C53-8D97F2BE8B6E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DPICalculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5ED92EFF-DE71-47CC-B5FF-28697E7B0E81</key>
+		<string>https://github.com/MattFaluotico/DPICalculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DPICalculator.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5ED92EFF-DE71-47CC-B5FF-28697E7B0E81</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MattFaluotico/DPICalculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5ED92EFF-DE71-47CC-B5FF-28697E7B0E81</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5ED92EFF-DE71-47CC-B5FF-28697E7B0E81</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DPICalculator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
