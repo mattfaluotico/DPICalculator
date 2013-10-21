@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DPICViewController.h"
+
+
 
 @interface DevicesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *segmentDevices;
 @property (strong, nonatomic) IBOutlet UITableView *deviceTable;
 @property (strong, nonatomic) NSMutableArray *devicesArray;
-
 
 - (IBAction)changedSegment:(UISegmentedControl *)sender;
 @end

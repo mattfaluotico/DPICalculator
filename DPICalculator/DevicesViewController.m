@@ -7,14 +7,18 @@
 //
 
 #import "DevicesViewController.h"
+#import "DPICViewController.h"
 
 #pragma mark Init
+
 
 @interface DevicesViewController ()
 
 + (NSMutableArray *) initArrayBySeg:(int)seg;
 
 @end
+
+#pragma mark implementation
 
 @implementation DevicesViewController
 
@@ -39,7 +43,12 @@ NSInteger myDevices = 2;
 - (IBAction)goBack:(UIButton *)sender {
     
     
+    
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    
 }
 
 - (void)viewDidLoad
@@ -114,7 +123,28 @@ NSInteger myDevices = 2;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Selected Cell %d", [indexPath row]);
     
-    // Return to the main page
+    // parses the string value in the cell and creates a device out of it to return to the parent view
+    UITableViewCell *currentCell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *resolutionOfCell = currentCell.detailTextLabel.text;
+    // range for the location of "x"
+    NSRange locationOfX = [resolutionOfCell rangeOfString:@"x"];
+    //changes the range to be the horizontal resolution
+    locationOfX.length = locationOfX.location -1;
+    locationOfX.location = 0;
+    // horizontal resolution as an NSInt
+    NSInteger *horizontalRes = (NSInteger*)[[resolutionOfCell substringWithRange:locationOfX]integerValue];
+    // changes the range to be the vertical resolution
+    locationOfX.location = locationOfX.length + 3;
+    locationOfX.length = resolutionOfCell.length - locationOfX.location;
+    // vertical resolutoin as an NSInt
+    NSInteger *verticalRes = (NSInteger*)[[resolutionOfCell substringWithRange:locationOfX]integerValue];
+    
+    // creates a device
+    
+    Device *newD = [[Device alloc] initWithName:currentCell.textLabel.text horizontalResolution:horizontalRes verticalResolution:verticalRes];
+    
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"device" object:newD];
 }
 
 

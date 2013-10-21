@@ -16,10 +16,16 @@
 
 @implementation DPICViewController
 
+
+@synthesize nameLabel = _nameLabel;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFromNotification:) name:@"device" object:nil];
+
+    
     // updates every time the text changes
     [self.resHorizontal addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     [self.resVertical addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
@@ -32,6 +38,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
     // remember %g
+}
+
+-(void) updateFromNotification: (NSNotification *) obj {
+    
+    Device *d = (Device *)[obj object];
+    [self nameLabel].text = d.deviceName;
+    
+    // TODO: Get resolution from object
+    self.resVertical.text = @"1900";
+    self.resHorizontal.text = @"11";
+    
+    [self updateResults];
+    
 }
 
 // releases the keyboard

@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *screenSize;
 @property (strong, nonatomic) IBOutlet UILabel *resultsDPI;
 @property (strong, nonatomic) IBOutlet UILabel *resultsScreen;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 
 -(void) updateResults;
 

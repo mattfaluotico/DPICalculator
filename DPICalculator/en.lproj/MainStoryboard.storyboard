@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -121,8 +121,8 @@
                                     <action selector="addDevice:" destination="2" eventType="touchUpInside" id="TKZ-Sp-f2g"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-cp-ksK">
-                                <rect key="frame" x="139" y="287" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-cp-ksK">
+                                <rect key="frame" x="160" y="287" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -208,6 +208,7 @@
                     </view>
                     <connections>
                         <outlet property="devices" destination="zGh-Xe-5EJ" id="ml6-Qm-0H0"/>
+                        <outlet property="nameLabel" destination="PgB-cp-ksK" id="G5s-xq-U0C"/>
                         <outlet property="resHorizontal" destination="bkh-Ew-v2h" id="MS9-cM-aNo"/>
                         <outlet property="resVertical" destination="4Aq-ia-73y" id="Esb-Vt-itj"/>
                         <outlet property="resultsDPI" destination="ecC-ab-y5V" id="cbN-Gw-1wT"/>
