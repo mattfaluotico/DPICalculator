@@ -46,8 +46,8 @@
     [self nameLabel].text = d.deviceName;
     
     // TODO: Get resolution from object
-    self.resVertical.text = @"1900";
-    self.resHorizontal.text = @"11";
+    self.resVertical.text = [NSString stringWithFormat:@"%i", d.verticalResolution];
+    self.resHorizontal.text = [NSString stringWithFormat:@"%i", d.horizontalResolution];
     
     [self updateResults];
     

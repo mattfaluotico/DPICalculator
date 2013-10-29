@@ -49,12 +49,15 @@ NSInteger myDevices = 2;
 
 -(void)viewDidAppear:(BOOL)animated {
     
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.activeDeviceArray = [DevicesViewController initArrayBySeg:[segmentDevices selectedSegmentIndex]];
+	
+    // Do any additional setup after loading the view.
     //self.devicesArray = [DevicesViewController initArray];
 
 }
@@ -89,23 +92,16 @@ NSInteger myDevices = 2;
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
     
-    // change array based on segment view...
-    NSMutableArray *currentDevices = [DevicesViewController initArrayBySeg:segmentDevices.selectedSegmentIndex];
-    
     // change string values based on the input 
-    NSString *textLabel = currentDevices[[indexPath row]][@"device"];
+    NSString *textLabel = [self activeDeviceArray][[indexPath row]][@"device"];
 
     NSString *details = [NSString stringWithFormat:@"%@ x %@",
-                         currentDevices[[indexPath row]][@"resH"],
-                         currentDevices[[indexPath row]][@"resV"]];
+                         [self activeDeviceArray][[indexPath row]][@"resH"],
+                         [self activeDeviceArray][[indexPath row]][@"resV"]];
     
     // set as constant font
     cell.textLabel.font = [UIFont systemFontOfSize:11];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:12];
-    
-    // set font dynamically rather than a set font
-    //cell.textLabel.adjustsFontSizeToFitWidth = YES;
-    //cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
     
     if (textLabel != nil && details != nil) {
         cell.textLabel.text = textLabel;
@@ -123,33 +119,15 @@ NSInteger myDevices = 2;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Selected Cell %d", [indexPath row]);
     
-    // parses the string value in the cell and creates a device out of it to return to the parent view
-    UITableViewCell *currentCell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *resolutionOfCell = currentCell.detailTextLabel.text;
-    // range for the location of "x"
-    NSRange locationOfX = [resolutionOfCell rangeOfString:@"x"];
-    //changes the range to be the horizontal resolution
-    locationOfX.length = locationOfX.location -1;
-    locationOfX.location = 0;
-    // horizontal resolution as an NSInt
-    NSInteger *horizontalRes = (NSInteger*)[[resolutionOfCell substringWithRange:locationOfX]integerValue];
-    // changes the range to be the vertical resolution
-    locationOfX.location = locationOfX.length + 3;
-    locationOfX.length = resolutionOfCell.length - locationOfX.location;
-    // vertical resolutoin as an NSInt
-    NSInteger *verticalRes = (NSInteger*)[[resolutionOfCell substringWithRange:locationOfX]integerValue];
+    // TODO: Create object from plist index
     
-    // creates a device
-    
-    Device *newD = [[Device alloc] initWithName:currentCell.textLabel.text horizontalResolution:horizontalRes verticalResolution:verticalRes];
-    
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"device" object:newD];
+   // [[NSNotificationCenter defaultCenter] postNotificationName:@"device" object:newD];
 }
 
 
 - (IBAction)changedSegment:(UISegmentedControl *)sender {
     
+    self.activeDeviceArray  = [DevicesViewController initArrayBySeg:sender.selectedSegmentIndex];
     [deviceTable reloadData];
 }
 
@@ -166,9 +144,11 @@ NSInteger myDevices = 2;
     }
     
     NSString *devicesPath = [[NSBundle mainBundle] pathForResource:path ofType:@"plist"];
-    NSMutableArray *devices = [NSMutableArray arrayWithContentsOfFile:devicesPath];
+    NSMutableArray *devicesDB = [NSMutableArray arrayWithContentsOfFile:devicesPath];
     
-    return devices;
+    return devicesDB;
 
 }
+
+
 @end
