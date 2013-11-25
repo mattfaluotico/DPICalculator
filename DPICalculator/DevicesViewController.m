@@ -120,7 +120,7 @@ NSInteger myDevices = 2;
     NSLog(@"Selected Cell %d", [indexPath row]);
     
     // TODO: Create object from plist index
-    
+	
    // [[NSNotificationCenter defaultCenter] postNotificationName:@"device" object:newD];
 }
 
