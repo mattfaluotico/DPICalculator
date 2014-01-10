@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333201201880B40B0065DA35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3332011F1880B40B0065DA35 /* Images.xcassets */; };
 		FBF5ECFD17B85D2200282F9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFC17B85D2200282F9D /* UIKit.framework */; };
 		FBF5ECFF17B85D2200282F9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFE17B85D2200282F9D /* Foundation.framework */; };
 		FBF5ED0117B85D2200282F9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ED0017B85D2200282F9D /* CoreGraphics.framework */; };
 		FBF5ED0717B85D2200282F9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED0517B85D2200282F9D /* InfoPlist.strings */; };
 		FBF5ED0917B85D2200282F9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5ED0817B85D2200282F9D /* main.m */; };
 		FBF5ED0D17B85D2200282F9D /* DPICAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5ED0C17B85D2200282F9D /* DPICAppDelegate.m */; };
-		FBF5ED0F17B85D2200282F9D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED0E17B85D2200282F9D /* Default.png */; };
-		FBF5ED1117B85D2200282F9D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED1017B85D2200282F9D /* Default@2x.png */; };
-		FBF5ED1317B85D2200282F9D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED1217B85D2200282F9D /* Default-568h@2x.png */; };
 		FBF5ED1617B85D2200282F9D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF5ED1417B85D2200282F9D /* MainStoryboard.storyboard */; };
 		FBF5ED1917B85D2200282F9D /* DPICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5ED1817B85D2200282F9D /* DPICViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3332011F1880B40B0065DA35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FBF5ECF917B85D2200282F9D /* DPICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF5ECFC17B85D2200282F9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBF5ECFE17B85D2200282F9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,9 +30,6 @@
 		FBF5ED0A17B85D2200282F9D /* DPICalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DPICalculator-Prefix.pch"; sourceTree = "<group>"; };
 		FBF5ED0B17B85D2200282F9D /* DPICAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPICAppDelegate.h; sourceTree = "<group>"; };
 		FBF5ED0C17B85D2200282F9D /* DPICAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPICAppDelegate.m; sourceTree = "<group>"; };
-		FBF5ED0E17B85D2200282F9D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		FBF5ED1017B85D2200282F9D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		FBF5ED1217B85D2200282F9D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FBF5ED1517B85D2200282F9D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		FBF5ED1717B85D2200282F9D /* DPICViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPICViewController.h; sourceTree = "<group>"; };
 		FBF5ED1817B85D2200282F9D /* DPICViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPICViewController.m; sourceTree = "<group>"; };
@@ -96,6 +92,7 @@
 				FBF5ED0B17B85D2200282F9D /* DPICAppDelegate.h */,
 				FBF5ED0C17B85D2200282F9D /* DPICAppDelegate.m */,
 				FBF5ED1417B85D2200282F9D /* MainStoryboard.storyboard */,
+				3332011F1880B40B0065DA35 /* Images.xcassets */,
 				FBF5ED0317B85D2200282F9D /* Supporting Files */,
 			);
 			path = DPICalculator;
@@ -108,9 +105,6 @@
 				FBF5ED0517B85D2200282F9D /* InfoPlist.strings */,
 				FBF5ED0817B85D2200282F9D /* main.m */,
 				FBF5ED0A17B85D2200282F9D /* DPICalculator-Prefix.pch */,
-				FBF5ED0E17B85D2200282F9D /* Default.png */,
-				FBF5ED1017B85D2200282F9D /* Default@2x.png */,
-				FBF5ED1217B85D2200282F9D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,10 +161,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333201201880B40B0065DA35 /* Images.xcassets in Resources */,
 				FBF5ED0717B85D2200282F9D /* InfoPlist.strings in Resources */,
-				FBF5ED0F17B85D2200282F9D /* Default.png in Resources */,
-				FBF5ED1117B85D2200282F9D /* Default@2x.png in Resources */,
-				FBF5ED1317B85D2200282F9D /* Default-568h@2x.png in Resources */,
 				FBF5ED1617B85D2200282F9D /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +261,8 @@
 		FBF5ED1D17B85D2200282F9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DPICalculator/DPICalculator-Prefix.pch";
 				INFOPLIST_FILE = "DPICalculator/DPICalculator-Info.plist";
@@ -280,6 +274,8 @@
 		FBF5ED1E17B85D2200282F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DPICalculator/DPICalculator-Prefix.pch";
 				INFOPLIST_FILE = "DPICalculator/DPICalculator-Info.plist";
