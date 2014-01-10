@@ -40,18 +40,18 @@
     // remember %g
 }
 
--(void) updateFromNotification: (NSNotification *) obj {
-    
-    Device *d = (Device *)[obj object];
-    [self nameLabel].text = d.deviceName;
-    
-    // TODO: Get resolution from object
-    self.resVertical.text = [NSString stringWithFormat:@"%i", d.verticalResolution];
-    self.resHorizontal.text = [NSString stringWithFormat:@"%i", d.horizontalResolution];
-    
-    [self updateResults];
-    
-}
+//-(void) updateFromNotification: (NSNotification *) obj {
+//    
+//    Device *d = (Device *)[obj object];
+//    [self nameLabel].text = d.deviceName;
+//    
+//    // TODO: Get resolution from object
+//    self.resVertical.text = [NSString stringWithFormat:@"%i", d.verticalResolution];
+//    self.resHorizontal.text = [NSString stringWithFormat:@"%i", d.horizontalResolution];
+//    
+//    [self updateResults];
+//    
+//}
 
 // releases the keyboard
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -92,36 +92,36 @@
 }
 
 
-// the plus button to add a device
-- (IBAction)addDevice:(UIButton *)sender {
-    
-    UIAlertView *getName =[[UIAlertView alloc] initWithTitle:@"What is the device name?" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Confirm", nil];
-    
-    [getName setAlertViewStyle:UIAlertViewStylePlainTextInput];
-    [getName show];
-    
-}
+//// the plus button to add a device
+//- (IBAction)addDevice:(UIButton *)sender {
+//    
+//    UIAlertView *getName =[[UIAlertView alloc] initWithTitle:@"What is the device name?" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Confirm", nil];
+//    
+//    [getName setAlertViewStyle:UIAlertViewStylePlainTextInput];
+//    [getName show];
+//    
+//}
 
-// when the alert is clicked a device is created and sent to the local database. 
-- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-
-    // because the cancel button is index 0
-    if (buttonIndex != 0) {
-        NSInteger *hr = (NSInteger *)[[[self resHorizontal] text] integerValue];
-        NSInteger *vr = (NSInteger *)[[[self resVertical] text] integerValue];
-        
-        NSString *name = [alertView textFieldAtIndex:0].text;
-        
-        // create a device object
-        // TODO: make it weak ?
-        Device *newD = [[Device alloc] initWithName:name horizontalResolution:hr verticalResolution:vr];
-        
-        // add device to the table
-        
-    }
-    
-    // Don't do anything if the cancle button is pressed
-}
+//// when the alert is clicked a device is created and sent to the local database. 
+//- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+//
+//    // because the cancel button is index 0
+//    if (buttonIndex != 0) {
+//        NSInteger *hr = (NSInteger *)[[[self resHorizontal] text] integerValue];
+//        NSInteger *vr = (NSInteger *)[[[self resVertical] text] integerValue];
+//        
+//        NSString *name = [alertView textFieldAtIndex:0].text;
+//        
+//        // create a device object
+//        // TODO: make it weak ?
+//        Device *newD = [[Device alloc] initWithName:name horizontalResolution:hr verticalResolution:vr];
+//        
+//        // add device to the table
+//        
+//    }
+//    
+//    // Don't do anything if the cancle button is pressed
+//}
 
 @end
 

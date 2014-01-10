@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Device.h"
+// #import "Device.h"
 
 @interface DPICViewController : UIViewController <UIAlertViewDelegate> {
     
