@@ -23,7 +23,6 @@
 
 -(void) updateResults;
 
-- (IBAction)addDevice:(UIButton *)sender;
 
 
 @end
