@@ -134,10 +134,16 @@
         vert = @"1080";
     }
     
+//    [sender setTitle:@"Set" forState:UIControlStateNormal];
+    
     self.resHorizontal.text = hor;
     self.resVertical.text = vert;
     
     [self updateResults];
+
+}
+
+- (void) returnButton: (UIButton *) button toNormalState: (NSString * ) ns {
     
 }
 
@@ -147,6 +153,16 @@
     double ppi = [self getPPI];
     
     pasteboard.string = [NSString stringWithFormat:@"%f", ppi];
+    
+    [self.buttonCopy setTitle:@"Copied" forState:UIControlStateNormal];
+    
+    [self performSelector:@selector(copied)
+               withObject:nil
+               afterDelay:1.0f];
+}
+
+- (void) copied {
+        [self.buttonCopy setTitle:@"Copy" forState:UIControlStateNormal];
 }
 
 @end
