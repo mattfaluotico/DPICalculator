@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		333201201880B40B0065DA35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3332011F1880B40B0065DA35 /* Images.xcassets */; };
+		33F5B06319226E9600A31E0F /* ResolutionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F5B06219226E9600A31E0F /* ResolutionButton.m */; };
+		33F5B06519226F2D00A31E0F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F5B06419226F2D00A31E0F /* QuartzCore.framework */; };
 		FBF5ECFD17B85D2200282F9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFC17B85D2200282F9D /* UIKit.framework */; };
 		FBF5ECFF17B85D2200282F9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ECFE17B85D2200282F9D /* Foundation.framework */; };
 		FBF5ED0117B85D2200282F9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF5ED0017B85D2200282F9D /* CoreGraphics.framework */; };
@@ -20,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		3332011F1880B40B0065DA35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33F5B06119226E9600A31E0F /* ResolutionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResolutionButton.h; sourceTree = "<group>"; };
+		33F5B06219226E9600A31E0F /* ResolutionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResolutionButton.m; sourceTree = "<group>"; };
+		33F5B06419226F2D00A31E0F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FBF5ECF917B85D2200282F9D /* DPICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF5ECFC17B85D2200282F9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FBF5ECFE17B85D2200282F9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F5B06519226F2D00A31E0F /* QuartzCore.framework in Frameworks */,
 				FBF5ECFD17B85D2200282F9D /* UIKit.framework in Frameworks */,
 				FBF5ECFF17B85D2200282F9D /* Foundation.framework in Frameworks */,
 				FBF5ED0117B85D2200282F9D /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +84,7 @@
 		FBF5ECFB17B85D2200282F9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33F5B06419226F2D00A31E0F /* QuartzCore.framework */,
 				FBF5ECFC17B85D2200282F9D /* UIKit.framework */,
 				FBF5ECFE17B85D2200282F9D /* Foundation.framework */,
 				FBF5ED0017B85D2200282F9D /* CoreGraphics.framework */,
@@ -89,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				FB1C4A4F17FA610F006CC24C /* Home View */,
+				33F5B06119226E9600A31E0F /* ResolutionButton.h */,
+				33F5B06219226E9600A31E0F /* ResolutionButton.m */,
 				FBF5ED0B17B85D2200282F9D /* DPICAppDelegate.h */,
 				FBF5ED0C17B85D2200282F9D /* DPICAppDelegate.m */,
 				FBF5ED1417B85D2200282F9D /* MainStoryboard.storyboard */,
@@ -180,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF5ED0917B85D2200282F9D /* main.m in Sources */,
+				33F5B06319226E9600A31E0F /* ResolutionButton.m in Sources */,
 				FBF5ED0D17B85D2200282F9D /* DPICAppDelegate.m in Sources */,
 				FBF5ED1917B85D2200282F9D /* DPICViewController.m in Sources */,
 			);

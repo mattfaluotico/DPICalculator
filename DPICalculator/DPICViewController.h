@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-// #import "Device.h"
+#import "ResolutionButton.h"
 
 @interface DPICViewController : UIViewController <UIAlertViewDelegate> {
     
@@ -18,9 +18,14 @@
 @property (strong, nonatomic) IBOutlet UITextField *screenSize;
 @property (strong, nonatomic) IBOutlet UILabel *resultsDPI;
 @property (strong, nonatomic) IBOutlet UILabel *resultsScreen;
+@property (weak, nonatomic) IBOutlet UIButton *buttonCopy;
 
 -(void) updateResults;
 
+- (IBAction)quickResButton:(id)sender;
 
+- (IBAction)copyPPI:(id)sender;
+
+- (IBAction)copyChangeText:(id)sender;
 
 @end
