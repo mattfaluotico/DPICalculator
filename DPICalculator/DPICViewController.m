@@ -17,14 +17,9 @@
 @implementation DPICViewController
 
 
-@synthesize nameLabel = _nameLabel;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFromNotification:) name:@"device" object:nil];
-
     
     // updates every time the text changes
     [self.resHorizontal addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
@@ -40,25 +35,14 @@
     // remember %g
 }
 
-//-(void) updateFromNotification: (NSNotification *) obj {
-//    
-//    Device *d = (Device *)[obj object];
-//    [self nameLabel].text = d.deviceName;
-//    
-//    // TODO: Get resolution from object
-//    self.resVertical.text = [NSString stringWithFormat:@"%i", d.verticalResolution];
-//    self.resHorizontal.text = [NSString stringWithFormat:@"%i", d.horizontalResolution];
-//    
-//    [self updateResults];
-//    
-//}
 
-// releases the keyboard
+// releases the keyboard when touching the view
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
     [super touchesBegan:touches withEvent:event];
 }
 
+// Linked to the touch did change in viewDidLoad
 - (void) textFieldDidChange: (UITextField *) tf {
     [self updateResults];
 }
@@ -85,8 +69,8 @@
     } else {
     self.resultsDPI.text = @"--";
     }
-    self.resultsScreen.text = [NSString stringWithFormat:@"Resolution: %i x %i", horizontal,vertical];
-    
+    self.resultsScreen.text = [NSString stringWithFormat:@"Resolution: %li x %li", (long)horizontal,(long)vertical];
+
     
     
 }
